@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Intent (Mindful Screen Time)</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+      color: #1d1d1f;
+      background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #f5f5f7; background: #111315; }
+      .meta, .note { background: #1c1f22; border-color: #2f3439; }
+      a { color: #64b5f6; }
+      hr { border-color: #2f3439; }
+    }
+    h1 { font-size: 1.9rem; margin-bottom: 0.4rem; }
+    h2 { font-size: 1.35rem; margin-top: 2rem; border-bottom: 1px solid #e5e5ea; padding-bottom: 6px; }
+    h3 { font-size: 1.05rem; margin-top: 1.3rem; }
+    .meta {
+      background: #f5f5f7;
+      border: 1px solid #e5e5ea;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0 24px;
+      font-size: 0.95rem;
+    }
+    .nav { margin: 12px 0 24px; font-size: 0.95rem; }
+    .nav a { margin-right: 14px; }
+    .note {
+      background: #f8fafc;
+      border-left: 4px solid #2e7d6b;
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 14px 0;
+    }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    hr { border: 0; border-top: 1px solid #e5e5ea; margin: 36px 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Intent</h1>
+  <div class="meta">
+    <strong>App:</strong> Intent - Mindful Screen Time (iOS)<br>
+    <strong>Developer:</strong> Loc Phan<br>
+    <strong>Effective / Updated:</strong> November 21, 2026<br>
+    <strong>Contact:</strong> <a href="mailto:locphd@gmail.com">locphd@gmail.com</a> &nbsp;|&nbsp; <strong>Support:</strong> <a href="support.html">Support Page</a>
+  </div>
+
+  <div class="nav">
+    <strong>Jump to language:</strong>
+    <a href="#en">English</a>
+    <a href="#vi">Tiếng Việt</a>
+  </div>
+
+  <section id="en">
+    <h2>English</h2>
+    <p>Intent is a digital wellbeing app for iOS designed around personal control and privacy. Intent requires <strong>no account</strong>, displays <strong>no advertisements</strong>, includes <strong>no third-party analytics or ad SDKs</strong>, and <strong>does not track you</strong> across apps or websites.</p>
+
+    <h3>1. Data That Stays on Your iPhone</h3>
+    <ul>
+      <li><strong>Apple Screen Time data:</strong> Intent uses Apple's Screen Time frameworks (<code>FamilyControls</code>, <code>DeviceActivity</code>, <code>DeviceActivityReport</code>, and <code>ManagedSettings</code>) with your permission. Screen Time usage statistics and app selections stay inside Apple's on-device sandbox. Intent's Screen Time extensions do not make network requests.</li>
+      <li><strong>Goals, schedules, notes, and streaks:</strong> Your daily goals, rest schedules, personal commitment notes, and streak history are stored locally on your iPhone. Local app data is protected when your device is locked and excluded from iCloud backups.</li>
+      <li><strong>On-device speech recognition (optional):</strong> If you use hold-to-talk in Intent Coach, microphone input is processed on-device to transcribe text. Audio recordings are not saved or uploaded.</li>
+      <li><strong>Face ID / Passcode (optional):</strong> When enabled before requesting extra time, authentication is handled entirely by iOS. Intent never receives or stores your biometric data or passcode.</li>
+    </ul>
+
+    <h3>2. Optional Intent Coach (Off by Default)</h3>
+    <div class="note">
+      <strong>Intent Coach is OFF by default.</strong> If you never enable Intent Coach, Intent does not send your data to our servers or any AI provider.
+    </div>
+    <p>When you choose to turn on and use Intent Coach, the app sends only the information needed to generate a Coach response over an encrypted HTTPS connection (using an ephemeral session without persistent cookies or cache):</p>
+    <ul>
+      <li><strong>User-entered Coach content:</strong> Messages you send to Coach, your schedule names/purposes, extra-time reasons you write, and up to five short Coach memory notes you choose to keep.</li>
+      <li><strong>Summarized Intent habit facts:</strong> High-level summaries of your Intent schedules, extra-time counts/minutes, feedback, and streak progress. <strong>Apple Screen Time per-app minutes and app names are not sent to Intent Coach.</strong></li>
+      <li><strong>Random per-install identifier:</strong> A randomly generated installation ID (<code>x-intent-install</code>) is sent to our Cloudflare Worker proxy solely to enforce daily usage limits and prevent abuse. This identifier is <strong>not</strong> forwarded to Anthropic.</li>
+    </ul>
+
+    <h3>3. Service Providers &amp; Retention</h3>
+    <ul>
+      <li><strong>Cloudflare Worker proxy:</strong> Routes Coach requests securely and stores only a per-day request count for your random install ID (automatically deleted after 2 days) and an aggregate monthly budget counter (deleted after 40 days). Our proxy does <strong>not</strong> store your prompts or Coach replies.</li>
+      <li><strong>Anthropic (Commercial API):</strong> Coach prompts and summarized facts are forwarded to Anthropic's commercial API to generate responses. Under Anthropic's commercial API terms, API inputs and outputs are not used to train models by default and may be retained for up to 30 days for safety and policy enforcement.</li>
+    </ul>
+    <p>Intent does not sell your data and does not use your data for advertising or cross-app tracking.</p>
+
+    <h3>4. Your Choices &amp; Data Deletion</h3>
+    <ul>
+      <li><strong>Disable Intent Coach:</strong> You can turn off Intent Coach at any time in <em>Settings</em> to stop all Coach network requests and remove the local install ID from your iPhone.</li>
+      <li><strong>Delete all local data:</strong> You can erase all local Intent data (goals, schedules, notes, streaks, and install ID) at any time via <em>Settings → Delete Intent Data</em>.</li>
+      <li><strong>Revoke permissions:</strong> You can revoke Screen Time, Microphone, Speech Recognition, or Face ID permissions at any time in iOS Settings.</li>
+      <li><strong>Deletion limits:</strong> Deleting local data on your iPhone does not erase Apple-managed Screen Time history, existing system backups, or requests already processed by Anthropic during its standard API retention window.</li>
+    </ul>
+
+    <h3>5. Children's Privacy</h3>
+    <p>Intent is designed for general adult digital wellbeing and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h3>6. Changes &amp; Contact</h3>
+    <p>We may update this Privacy Policy if Intent's features or data practices change. The latest version is always published at this URL with the updated date above. For privacy questions or requests, email <a href="mailto:locphd@gmail.com">locphd@gmail.com</a>.</p>
+  </section>
+
+  <hr>
+
+  <section id="vi">
+    <h2>Tiếng Việt</h2>
+    <p>Intent là ứng dụng hỗ trợ sử dụng điện thoại có chủ đích trên iOS, được thiết kế đề cao quyền kiểm soát cá nhân và quyền riêng tư. Intent <strong>không yêu cầu tài khoản</strong>, <strong>không hiển thị quảng cáo</strong>, <strong>không tích hợp SDK phân tích hay quảng cáo của bên thứ ba</strong> và <strong>không theo dõi bạn</strong> giữa các ứng dụng hay website.</p>
+
+    <h3>1. Dữ liệu chỉ lưu trên iPhone của bạn</h3>
+    <ul>
+      <li><strong>Dữ liệu Thời gian sử dụng (Screen Time) của Apple:</strong> Intent sử dụng bộ khung Screen Time của Apple (<code>FamilyControls</code>, <code>DeviceActivity</code>, <code>DeviceActivityReport</code>, <code>ManagedSettings</code>) khi bạn cấp quyền. Số liệu sử dụng và danh sách ứng dụng nằm trong vùng bảo vệ trên thiết bị của Apple; các extension Screen Time của Intent không thực hiện kết nối mạng.</li>
+      <li><strong>Mục tiêu, lịch nghỉ, ghi chú và chuỗi ngày:</strong> Các mục tiêu hằng ngày, khung giờ nghỉ, lời tự hứa và hành trình chuỗi ngày được lưu cục bộ trên iPhone, được bảo vệ khi iPhone khóa và không đưa vào bản sao lưu iCloud.</li>
+      <li><strong>Nhận diện giọng nói trên thiết bị (tùy chọn):</strong> Nếu bạn dùng tính năng nhấn giữ để nói trong Intent Coach, âm thanh được xử lý trên thiết bị để chuyển thành văn bản; bản ghi âm không được lưu hay tải lên máy chủ.</li>
+      <li><strong>Face ID / Mật mã (tùy chọn):</strong> Khi bật xác nhận trước khi dùng thêm giờ, việc xác thực do iOS thực hiện hoàn toàn; Intent không bao giờ truy cập hay lưu dữ liệu sinh trắc học hoặc mật mã.</li>
+    </ul>
+
+    <h3>2. Intent Coach tùy chọn (Mặc định tắt)</h3>
+    <div class="note">
+      <strong>Intent Coach mặc định TẮT.</strong> Nếu bạn không bật Intent Coach, ứng dụng không gửi dữ liệu của bạn tới máy chủ của chúng tôi hay bất kỳ nhà cung cấp AI nào.
+    </div>
+    <p>Khi bạn chủ động bật và sử dụng Intent Coach, ứng dụng chỉ gửi qua kết nối mã hóa HTTPS (phiên tạm không lưu cookie hay bộ nhớ đệm) các thông tin cần thiết để tạo phản hồi:</p>
+    <ul>
+      <li><strong>Nội dung bạn nhập cho Coach:</strong> Câu hỏi gửi cho Coach, tên/mục đích khung giờ nghỉ, lý do xin thêm giờ bạn ghi và tối đa 5 dòng ghi nhớ Coach bạn chọn giữ.</li>
+      <li><strong>Tóm tắt thói quen trong Intent:</strong> Tóm tắt lịch nghỉ, số lần/số phút xin thêm giờ, phản hồi và tiến độ chuỗi ngày. <strong>Số phút sử dụng từng app và tên app từ Apple Screen Time không được gửi cho Intent Coach.</strong></li>
+      <li><strong>Mã cài đặt ngẫu nhiên:</strong> Một mã ngẫu nhiên theo bản cài đặt (<code>x-intent-install</code>) chỉ gửi tới máy chủ trung gian Cloudflare Worker để giới hạn lượt dùng trong ngày và chống lạm dụng. Mã này <strong>không</strong> được chuyển tiếp sang Anthropic.</li>
+    </ul>
+
+    <h3>3. Đơn vị xử lý và thời gian lưu trữ</h3>
+    <ul>
+      <li><strong>Cloudflare Worker (máy chủ trung gian):</strong> Chỉ chuyển tiếp yêu cầu Coach và lưu bộ đếm lượt dùng theo ngày cho mã cài đặt ngẫu nhiên (tự xóa sau 2 ngày) cùng tổng ngân sách tháng (tự xóa sau 40 ngày). Máy chủ trung gian <strong>không</strong> lưu nội dung câu hỏi hay câu trả lời của Coach.</li>
+      <li><strong>Anthropic (Commercial API):</strong> Nội dung câu hỏi và tóm tắt ngữ cảnh được gửi tới API thương mại của Anthropic để tạo câu trả lời. Theo chính sách API thương mại của Anthropic, dữ liệu mặc định không dùng để huấn luyện mô hình và có thể được lưu tối đa 30 ngày cho mục đích an toàn và thực thi chính sách.</li>
+    </ul>
+    <p>Intent không bán dữ liệu của bạn và không dùng dữ liệu cho quảng cáo hoặc theo dõi giữa các ứng dụng/website.</p>
+
+    <h3>4. Quyền kiểm soát và xóa dữ liệu</h3>
+    <ul>
+      <li><strong>Tắt Intent Coach:</strong> Bạn có thể tắt Intent Coach bất cứ lúc nào trong <em>Thiết lập</em> để ngừng mọi kết nối mạng của Coach và xóa mã cài đặt cục bộ trên iPhone.</li>
+      <li><strong>Xóa toàn bộ dữ liệu cục bộ:</strong> Vào <em>Thiết lập → Xóa dữ liệu Intent</em> để xóa mục tiêu, lịch nghỉ, ghi chú, chuỗi ngày và mã cài đặt trên iPhone.</li>
+      <li><strong>Thu hồi quyền:</strong> Bạn có thể thu hồi quyền Screen Time, Micro, Nhận diện giọng nói hoặc Face ID bất cứ lúc nào trong Cài đặt iOS.</li>
+      <li><strong>Giới hạn xóa:</strong> Thao tác xóa trên iPhone không xóa dữ liệu Screen Time do Apple quản lý, bản sao lưu hệ thống đã có, hay dữ liệu đã gửi tới Anthropic trong thời hạn lưu trữ tiêu chuẩn của nhà cung cấp.</li>
+    </ul>
+
+    <h3>5. Liên hệ</h3>
+    <p>Nếu bạn có câu hỏi hoặc yêu cầu liên quan đến quyền riêng tư, vui lòng gửi email tới <a href="mailto:locphd@gmail.com">locphd@gmail.com</a>.</p>
+  </section>
+</body>
+</html>
